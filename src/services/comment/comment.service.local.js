@@ -71,17 +71,3 @@ async function save(comment) {
     return savedComment
 }
 
-async function addCommentMsg(commentId, txt) {
-    // Later, this is all done by the backend
-    const comment = await getById(commentId)
-
-    const msg = {
-        id: makeId(),
-        by: userService.getLoggedinUser(),
-        txt
-    }
-    comment.msgs.push(msg)
-    await storageService.put(STORAGE_KEY, comment)
-
-    return msg
-}
