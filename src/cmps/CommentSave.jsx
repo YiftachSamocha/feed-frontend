@@ -18,7 +18,7 @@ export function CommentSave() {
         setCriteria({ email: '', msg: '' })
     }
 
-    return <section>
+    return <section className="comment-save">
         <div>
             <input type="text" placeholder="Email" name="email" onChange={handleChange} value={criteria.email} />
             <textarea name="msg" placeholder="Message" onChange={handleChange} value={criteria.msg} ></textarea>

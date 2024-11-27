@@ -1,0 +1,27 @@
+.comment-save {
+    background-color: #EFEFEF;
+    padding: 0.5em;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+
+        button {
+            background-color: #40A8DE;
+            border-radius: 5px;
+            font-weight: 900;
+            padding: 1em;
+            text-transform: uppercase;
+        }
+        input, textarea{
+            font-size: 1em;
+            padding-left: 0.3em;
+            width: 300px;
+
+        }
+    }
+
+}

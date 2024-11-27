@@ -3,11 +3,11 @@ import { CommentIndex } from './pages/CommentIndex'
 
 export function RootCmp() {
     return (
-        <div className="main-container">
-            <main>
-                <CommentIndex />
-            </main>
-        </div>
+
+        <main>
+            <CommentIndex />
+        </main>
+
     )
 }
 

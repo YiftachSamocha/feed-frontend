@@ -16,11 +16,11 @@ export function CommentList() {
         setFilterBy({ txt: value })
     }
 
-    return <section>
-        <input type="text" value={filterBy.txt} onChange={handleChange} />
-        <div>
+    return <section className="comment-list">
+        <input type="text" value={filterBy.txt} onChange={handleChange} placeholder="Filter" />
+        <div className="table">
             {comments.map((item) => {
-                return <div>
+                return <div className="item">
                     <img src={item.img} />
                     <div>
                         <h3>{item.email}</h3>

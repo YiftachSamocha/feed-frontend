@@ -12,4 +12,9 @@
 @import "basics/forms";
 
 
-// pages
+// Pages
+@import "pages/CommentIndex.scss";
+
+// Cmps
+@import "cmps/CommentList.scss";
+@import "cmps/CommentSave.scss";

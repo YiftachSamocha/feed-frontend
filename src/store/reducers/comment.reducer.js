@@ -11,11 +11,11 @@ export function commentReducer(state = initialState, action) {
         case SET_COMMENTS:
             newState = { ...state, comments: action.comments }
             break
-        
+
         case ADD_COMMENT:
-            newState = { ...state, comments: [...state.comments, action.comment] }
+            newState = { ...state, comments: [action.comment, ...state.comments] }
             break
-        
+
         default:
     }
     return newState
