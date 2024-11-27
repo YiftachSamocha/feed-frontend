@@ -1,21 +1,12 @@
 import React from 'react'
-import { Routes, Route } from 'react-router'
-
-
+import { CommentIndex } from './pages/CommentIndex'
 
 export function RootCmp() {
     return (
         <div className="main-container">
-            <AppHeader />
-           
-
             <main>
-                <Routes>
-                    {/* <Route path="" element={<HomePage />} /> */}
-                   
-                </Routes>
+                <CommentIndex />
             </main>
-            <AppFooter />
         </div>
     )
 }
